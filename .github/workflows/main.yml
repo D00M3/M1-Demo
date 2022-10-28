@@ -3,6 +3,11 @@
 name: git actions demo
 on: [push]
 
+#Global variables go before jobs
+env:
+ Global_VAR: "This is public"
+
+
 jobs:
   action_demo:
     #rons-on is what type of OS  is our pipeline running on
@@ -23,3 +28,15 @@ jobs:
        run: ls -al
      - name: Run a python script
        run: python script.py
+ 
+  variable_job:
+    env:
+     SECRET_TEXT: ${{secrets.SUPER_SECRET_TEXT}}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print global variable
+      run: echo $GLOBAL_VAR
+    - name: print local variable
+      run: echo $LOCAL_VAR
+    - name: print secret variable
+      run: echo $SECRET_TEXT
