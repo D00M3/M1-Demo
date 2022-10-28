@@ -1,8 +1,7 @@
 # What jobs are part of this work flow
 
 name :git actions demo
-on: [push]
-# In what event does this workflow run
+on:[push] # In what event does this workflow run
  jobs:
    action_demo:
     #rons-on is what type of OS  is our pipeline running on
