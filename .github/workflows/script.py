@@ -1,25 +1,2 @@
-# What jobs are part of this work flow
+print("This is my Realm")
 
-name :git actions demo
-on: [push] # In what event does this workflow run
- jobs:
-   action_demo:
-    #rons-on is what type of OS  is our pipeline running on
-    runs-on: ubuntu-latest
-    # For this job, what do you want to do
-    steps: 
-    -run: echo 'Hello World!'
-    -run: pwd
-    -run: ls
-    -run: echo 'Job status is ${{job.status}}'
-
- # This job will be focused on cloning our repo
-    clone demo:
-        runs on: ubuntu-latest
-        steps:
-        -name: Checkout repo
-         uses: actions/checkout@v3
-        -name: list contents of current directory 
-         run: ls -al
-        -name: Run a python script
-         run: python script.py
