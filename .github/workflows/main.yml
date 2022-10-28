@@ -31,7 +31,7 @@ jobs:
  
   variable_job:
     env:
-     SECRET_TEXT: ${{secrets.SUPER_SECRET_TEXT}}
+     SECRET_TEXT: ${{secrets.CIA}}
     runs-on: ubuntu-latest
     steps:
     - name: Print global variable
