@@ -1,0 +1,45 @@
+Songs.yaml
+
+Artist: Rob Pajama
+
+Feat: Dunk Honeybee, No Belles
+
+Album_Name: Doctor in the House
+
+Year_Released:2019
+
+
+
+Rating: 7
+
+Runtime: 19:07
+
+Genre: Electronic Music
+
+Number of songs: 6
+
+songs:
+  - Song 1:
+      Name: Going Magnet
+      Runtime: 03:22
+    
+  - Song 2 
+    name: Automatic Faith
+	Runtime:	03:10
+
+  -Song 3
+    name: Good Lines
+	Runtime	03:19
+    
+   -Song 4 
+    Name: Little Light
+	Runtime: 02:10
+   
+   -Song 5 
+    Name: Still Need Rider
+    Runtime : 03:39
+
+	-Song 6 
+    Name: Chill Tech
+	Runtime: 03:27
+	
