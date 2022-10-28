@@ -1,0 +1,14 @@
+# What jobs are part of this work flow
+
+name :git actions demo
+on: [push] # In what event does this workflow run
+ jobs:
+   action_demo:
+    #rons-on is what type of OS  is our pipeline running on
+    runs-on: ubuntu-latest
+    # For this job, what do you want to do
+    steps: 
+    -run: echo 'Hello World!'
+    -run: pwd
+    -run: ls
+    -run: echo 'Job status is ${{job.status}}'
